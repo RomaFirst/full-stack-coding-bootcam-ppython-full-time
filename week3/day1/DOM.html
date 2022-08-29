@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <form>
+        <input type="button" name="test" value="Click me" onclick="inform()">
+    </form>
+
+    <script>
+        function inform(){
+            alert("You clicked me")
+        }
+    </script>
+
+<form>
+    <input id="button" type="button" name="test" value="Click me">
+</form>
+
+<script>
+   document.getElementById('button').onclick = function() {
+        alert('Click!');
+    };
+</script>
+</body>
+</html>
