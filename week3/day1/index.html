@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>DOM!!!</title>
+</head>
+<body>
+  <h1 id="one">Welcome</h1>
+  <p>This is the welcome message.</p>
+  <h2>Technology</h2>
+  <p>This is the technology section.</p>
+
+  <script>
+    let text = document.getElementsByTagName("p")[0].innerHTML;
+
+    let newParagraphe = document.createElement("p");
+    let newTextNode = document.createTextNode("je veint de creer mon nouveau text");
+    newParagraphe.appendChild(newTextNode);
+    console.log(newParagraphe.innerHTML)
+    let bdy = document.getElementsByTagName("body")[0];
+    bdy.appendChild(newParagraphe);
+    alert("The first heading is " + text); //output : "The first heading is Welcome"
+</script>
+
+</body>
+</html>
