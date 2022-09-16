@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+section{
+    background-color: white;
+    border: 5px solid red;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px 100px;
+   
+}
+
+
+
+
+
+
+
+.div1 {
+    border: 1px solid blue;
+    background-color: #e6ffff;
+    /*  Example with grid area  */
+    /*     grid-area : a */
+  }
+  
+  .div2 {
+    border: 1px solid red;
+    background-color: #ffd6cc;
+    /*  Example with grid area  */
+    /*     grid-area : b */
+    align-self : start
+  }
+  
+  .div3 {
+    border: 1px solid orange;
+    background-color: #ffffcc;
+    /*  Example with grid area  */
+    /*     grid-area : c */
+      grid-column: 1 / span 3;
+      grid-row: 1 / span 3
+  }
