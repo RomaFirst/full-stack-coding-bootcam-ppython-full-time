@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    
+<img id="myImage" onclick="changeImage()" src="allumer.gif" width="100px" height="180px">
+<p>Clic sur l´image pour l´allumer</p>
+
+<script>
+    function changeImage(){
+
+                                var image=document.getElementById('myImage')
+
+                                if(image.src.match("bulbon")){
+                                                                alert("BOnj")
+                                                              image.src="allumer.gif";
+                                                             }
+                            
+                                    else{
+                                            image.src="etient.gif";
+                                         }
+
+                          }
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
