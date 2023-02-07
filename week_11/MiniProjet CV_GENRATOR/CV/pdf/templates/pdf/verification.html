@@ -1,0 +1,39 @@
+{% extends "pdf/base.html" %}
+
+{% block content %}
+<h1>Verifiez que vos donnees sont corrects</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <h2 class="text-white">{{ name }}</h2>
+</nav>
+<h4 class="title"> CONTACT</h4>
+<p>{{ email }} <br> {{ phone }} <br> {{ address }}</p>
+
+<h4 class="title"> COMPENTENCES</h4>
+<p>{{ com }}</p>
+
+<h4 class="title"> LANGUE</h4>
+<p>{{ langue }} </p>
+
+<h4 class="title"> INTERETS</h4>
+<p>{{ interet }} </p>
+
+<h4 class="title"> OBJECTIS</h4>
+<p>{{ objectif }} </p>
+
+<h4 class="title"> EXPERIENCES</h4>
+<p>{{ experience }}</p>
+
+<h4 class="title"> EDUCATIONS</h4>
+<p>{{ education }}}</p>
+
+<h4 class="title"> PROJECT</h4>
+<p>{{ project }}</p>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <small class="text-white">DonaldCV generator {% now "Y-m-d" %}</small>
+</nav>
+<br>
+<a href="download" class="btn btn-primary text-white">Clickez ici pour telecharger</a>
+{% endblock %}

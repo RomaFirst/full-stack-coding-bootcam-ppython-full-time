@@ -1,0 +1,67 @@
+{% extends 'pdf/base.html' %}
+
+{% block content %}
+<h3 class="text-muted">Il vous faudra seulement remplir le formulaire et puis BOOM VOUS AVEZ VOTRE CV</h3>
+<hr>
+<form method="POST">
+    {% csrf_token %}
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="name">Non et Prenom</label>
+        <input type="text" class="form-control" name="name" id="name">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" required id="email" name="email">
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label for="addres">Address</label>
+      <input type="text" class="form-control" name="address" id="address" placeholder="Cameroon, Yaounde, Bastos">
+    </div>
+
+    <div class="form-group">
+        <label for="competance">Competances</label>
+        <input type="text" class="form-control" name="competence" id="competance" placeholder="python, django, flask, React, R">
+    </div>
+
+    <div class="form-group">
+        <label for="Objetif">Objetifs</label>
+        <textarea   class="form-control" name="objectif" id="objectif" placeholder="Votre objetif ici" cols="30" rows="10"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="Objetif">Experiences</label>
+        <textarea class="form-control" name="experience" id="experience" placeholder="Votre experience ici precisez le poste, l'entreprise la dure" cols="30" rows="10"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="Objetif">Education</label>
+        <textarea class="form-control" name="education" id="education" placeholder="Baccalaureat C 2021 lycee bilingue de Yom III" cols="30" rows="10"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="Objetif">Project </label>
+        <textarea class="form-control" name="projet" id="project" placeholder=" J'ai developer un project de Camera de detection facial en 2019 le code source se trouve sur mon compte github voici l'address github/donaldte.com" cols="30" rows="10"></textarea>
+    </div>
+    
+    <div class="form-row">
+      <div class="form-group col-md-5">
+        <label for="phone">Phone</label>
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="+237691435485">
+      </div>
+      <div class="form-group col-md-3">
+        <label for="langue">Langue</label>
+        <input type="text" class="form-control" id="langue" name="langue" placeholder="anglais, francais, espanol">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="Interet">Interets</label>
+        <input type="text" class="form-control" id="interet" name="interet" placeholder="football, dance, lecture">
+      </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary"> Creer </button>
+  </form>
+{% endblock %}
